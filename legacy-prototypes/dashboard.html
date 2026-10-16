@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+    <br>
+    <center>
+        <table border="1" cellpadding="15" cellspacing="0" width="750">
+            <tr>
+                <td>
+                    <!-- Top Bar -->
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td>
+                                <h2>Admin Dashboard</h2>
+                            </td>
+                            <td align="right">
+                                <b>Status:</b> Active | <a href="login.html">Log Out</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <hr>
+
+                    <!-- Navigation Links -->
+                    <p>
+                        <a href="#overview">Overview</a> | 
+                        <a href="#module1">Module 1</a> | 
+                        <a href="#module2">Module 2</a> | 
+                        <a href="#module3">Module 3</a>
+                    </p>
+                    <hr>
+
+                    <!-- Overview Section -->
+                    <h3 id="overview">Overview</h3>
+                    <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                        <tr>
+                            <th>Total Users</th>
+                            <th>Active Sessions</th>
+                            <th>System Status</th>
+                            <th>Pending Tasks</th>
+                        </tr>
+                        <tr align="center">
+                            <td>128</td>
+                            <td>14</td>
+                            <td>Online</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <!-- Module 1 -->
+                    <h3 id="module1">Module 1: User Management</h3>
+                    <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                        <tr>
+                            <th>ID</th>
+                            <th>User</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr align="center">
+                            <td>#001</td>
+                            <td>admin</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td><button type="button">Edit</button></td>
+                        </tr>
+                        <tr align="center">
+                            <td>#002</td>
+                            <td>user01</td>
+                            <td>User</td>
+                            <td>Active</td>
+                            <td><button type="button">Edit</button></td>
+                        </tr>
+                        <tr align="center">
+                            <td>#003</td>
+                            <td>user02</td>
+                            <td>User</td>
+                            <td>Inactive</td>
+                            <td><button type="button">Edit</button></td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <!-- Module 2 -->
+                    <h3 id="module2">Module 2: System Modules</h3>
+                    <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                        <tr>
+                            <th>Module Name</th>
+                            <th>Description</th>
+                            <th>Toggle</th>
+                        </tr>
+                        <tr>
+                            <td><b>Module A</b></td>
+                            <td>User authentication and session verification service</td>
+                            <td align="center"><input type="checkbox" checked> Enabled</td>
+                        </tr>
+                        <tr>
+                            <td><b>Module B</b></td>
+                            <td>Automatic database backup and integrity indexing</td>
+                            <td align="center"><input type="checkbox" checked> Enabled</td>
+                        </tr>
+                        <tr>
+                            <td><b>Module C</b></td>
+                            <td>Real-time activity audit and notification pipeline</td>
+                            <td align="center"><input type="checkbox"> Disabled</td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <!-- Module 3 -->
+                    <h3 id="module3">Module 3: Recent Activity</h3>
+                    <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                        <tr>
+                            <th>Time</th>
+                            <th>Event</th>
+                            <th>Account</th>
+                        </tr>
+                        <tr align="center">
+                            <td>10:05:12</td>
+                            <td>Admin logged in</td>
+                            <td>admin</td>
+                        </tr>
+                        <tr align="center">
+                            <td>09:42:01</td>
+                            <td>User registration completed</td>
+                            <td>user02</td>
+                        </tr>
+                        <tr align="center">
+                            <td>08:15:30</td>
+                            <td>System diagnostics check passed</td>
+                            <td>system</td>
+                        </tr>
+                    </table>
+
+                    <br>
+                    <hr>
+                    <p align="center">
+                        <a href="login.html">Log Out</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <br>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <br><br>
+    <center>
+        <table border="1" cellpadding="20" cellspacing="0" width="380">
+            <tr>
+                <td>
+                    <h2 align="center">Login</h2>
+                    <hr>
+                    <form id="loginForm" onsubmit="handleLogin(event)">
+                        <p>
+                            <label for="username"><b>Username</b></label><br>
+                            <input type="text" id="username" name="username" required size="35" placeholder="Enter username">
+                        </p>
+                        <p>
+                            <label for="password"><b>Password</b></label><br>
+                            <input type="password" id="password" name="password" required size="35" placeholder="Enter password">
+                        </p>
+                        <fieldset>
+                            <legend><b>Role</b></legend>
+                            <label>
+                                <input type="radio" name="role" value="user" checked> User
+                            </label>
+                            &nbsp;&nbsp;&nbsp;
+                            <label>
+                                <input type="radio" name="role" value="admin"> Admin
+                            </label>
+                        </fieldset>
+                        <br>
+                        <center>
+                            <input type="submit" value="Log In">
+                            &nbsp;
+                            <input type="reset" value="Reset">
+                        </center>
+                    </form>
+                    <hr>
+                    <p align="center">
+                        Don't have an account? <a href="signup.html">Sign Up</a>
+                    </p>
+                    <p align="center">
+                        <small><i>Note: Select "Admin" or enter username "admin" to open Dashboard.</i></small>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            var username = document.getElementById('username').value.trim().toLowerCase();
+            var selectedRole = document.querySelector('input[name="role"]:checked').value;
+
+            if (selectedRole === 'admin' || username === 'admin') {
+                window.location.href = 'dashboard.html';
+            } else {
+                window.location.href = 'success.html';
+            }
+        }
+    </script>
+</body>
+</html>
